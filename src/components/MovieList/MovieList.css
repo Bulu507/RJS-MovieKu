@@ -1,0 +1,32 @@
+.movie{
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    width: 200px;
+    position: relative;
+}
+
+.movie:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.movie img{
+    max-width: 100%;
+}
+
+.movie-info {
+    background-color: rgba(54, 54, 54, 0.527);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.movie-info h3 {
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+}

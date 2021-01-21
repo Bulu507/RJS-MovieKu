@@ -1,0 +1,10 @@
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

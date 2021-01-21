@@ -1,0 +1,33 @@
+.container-header {
+    background-color: rgba(54, 54, 54, 0.527);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-header h1 {
+    font-family: inherit;
+    color: white;
+    margin: 0;
+}
+
+.container-search{
+    display: block;
+    justify-items: center;
+    padding: 10px;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 13px;
+    color: white;
+    padding: 5px 15px;
+    width: 500px;
+}
+
+.search:focus {
+    outline: none;
+}
