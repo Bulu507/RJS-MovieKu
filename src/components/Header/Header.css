@@ -3,6 +3,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -34,5 +35,26 @@
 }
 
 .search:focus {
+    outline: none;
+}
+
+.searching{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searching select{
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    background: grey;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 13px;
+    height: 34px;
+    padding: 5px 15px;
+}
+
+.searching select:focus{
     outline: none;
 }
