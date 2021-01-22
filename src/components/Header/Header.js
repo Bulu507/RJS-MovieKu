@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Header.css';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const Header = (props) => {
     const [searchValue, setSearchValue] = useState('');
@@ -23,7 +23,9 @@ const Header = (props) => {
 
     return (
         <div className="container-header">
-            <h1>MovieKu</h1>
+            <Link  to="/" className="logo">
+                <h1>MovieKu</h1>
+            </Link>
             <form onSubmit={handleOnSubmit} className="container-search">
                 <input 
                     className="search" 

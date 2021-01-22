@@ -1,0 +1,31 @@
+.container-detail{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-detail img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.info-container{
+    width: 70%;
+    padding: 20px;
+}
+
+.info-container h1 {
+    margin: 0;
+}
+
+.info-container table {
+    border-collapse: collapse;
+    font-family: inherit;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.info-container tr {
+    text-align: left;
+}
