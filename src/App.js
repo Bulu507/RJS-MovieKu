@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from "react";
-import MovieList from './components/MovieList.js';
-import Header from './components/Header.js';
+import React from "react";
+import Routing from './Router/router';
 
 function App(){
   
   return (
     <div>
-      <h1>Hello World</h1>
+      <Routing />
     </div>
   )
 }

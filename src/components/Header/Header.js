@@ -1,18 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.css';
+import { useHistory } from "react-router-dom";
 
 const Header = (props) => {
-    
+    const [searchValue, setSearchValue] = useState('');
+    const history = useHistory();
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault();     
+           
+
+        if(searchValue){
+            history.push(`/search/${searchValue}`);
+            setSearchValue('');
+        }
+
+    }
+
+    const handleOnChange =(e) => {
+        setSearchValue(e.target.value);
+    }
+
     return (
         <div className="container-header">
-            <h1>{props.heading}</h1>
-            <form onSubmit={props.onSubmit} className="container-search">
+            <h1>MovieKu</h1>
+            <form onSubmit={handleOnSubmit} className="container-search">
                 <input 
                     className="search" 
                     type="text" 
                     placeholder="Search..." 
-                    value={props.value}
-                    onChange={props.onChange}
+                    value={searchValue}
+                    onChange={handleOnChange}
                 />
             </form>
         </div>
